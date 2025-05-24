@@ -1,5 +1,4 @@
--- Active: 1747441200865@@127.0.0.1@5432@postgres
--- Active: 1747441200865@@127.0.0.1@5432@postgres
+
 
 CREATE TABLE rangers (
       ranger_id SERIAL PRIMARY KEY,
