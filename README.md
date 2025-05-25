@@ -9,12 +9,14 @@ ANS: ডাটাবেস স্কিমা (schema) এর প্রধান
                                    কারণ পুরো নাম হবে <schema_name>.<object_name>।
                                    
 Explain the Primary Key and Foreign Key concepts in PostgreSQL ?
+
 ANS : প্রাইমারি কী (Primary Key)
       প্রাইমারি কী হলো একটি টেবিলের এমন একটি (বা একাধিক) কলাম যার মাধ্যমে প্রতিটি রেকর্ড (rows) অনন্য (unique) ভাবে চিহ্নিত করা যায়।
       ফরেন কী (Foreign Key)
       ফরেন কী হলো একটি কনস্ট্রেইন্ট যা একটি টেবিলের (সন্তান টেবিল) কলামকে অন্য টেবিলের (মূল টেবিল) প্রাইমারি কী (বা অনন্য কলাম) এর সাথে লিঙ্ক বা রিলেশনশিপ স্থাপন করে। 
 
 What is the difference between the VARCHAR and CHAR data types?
+
 ANS : 
      ১. স্টোরেজ ও দৈর্ঘ্য (Storage & Length)
 
