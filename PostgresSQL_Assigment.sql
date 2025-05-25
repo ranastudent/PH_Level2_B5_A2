@@ -84,7 +84,7 @@ LIMIT 2;
 --Problem 07
 UPDATE species
 SET conversation_status  = 'Historic'
-WHERE discovery_date > '1800-12-31';
+WHERE discovery_date < '1800-01-01';
 
 --Problem 08
 SELECT sighting_id,
