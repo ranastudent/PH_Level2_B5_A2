@@ -78,3 +78,71 @@ ANS : LIMIT এবং OFFSET ক্লজগুলো মূলত বড় বা
           2. OFFSET দিয়ে আপনি প্রথম কতগুলো রো প্রয়োজন নেই (এগুলো বাগিয়েই) কত নম্বর রো থেকে শুরু করে রিটার্ন শুরু করবে, তা নির্দেশ করতে পারেন।
 
 
+How can you modify data using UPDATE statements? 
+
+ANS :   
+                UPDATE <table_name>
+
+                SET <column1> = <new_value1>,
+
+                    <column2> = <new_value2>,
+
+                [WHERE <condition>];
+
+
+What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+
+
+ANS :    
+
+        ১. JOIN এর গুরুত্ব (Significance)
+
+                * একাধিক টেবিল থেকে প্রয়োজনীয় তথ্য এনে একত্রে ব্যবহারের জন্য JOIN অপরিহার্য, কারণ এক টেবিলেই সব ডেটা রাখা সঠিক নয়।
+
+                * যদি আপনি চান প্রতিটি অর্ডারের সাথে গ্রাহকের নামও দেখতে, তাহলে একসাথে দুই টেবিল থেকে ডেটা টেনে আনতে হবে। JOIN ছাড়া এটা সম্ভব নয়।
+
+                * ধরুন আপনার কাছে একটি customer টেবিল আছে যেখানে গ্রাহকের নাম ও আইডি আছে, আর অন্যদিকে একটি orders টেবিল আছে যেখানে প্রতিটি অর্ডারের আইডি, গ্রাহক আইডি (customer_id) ইত্যাদি রয়েছে।
+                  যদি আপনি চান প্রতিটি অর্ডারের সাথে গ্রাহকের নামও দেখতে, তাহলে একসাথে দুই টেবিল থেকে ডেটা টেনে আনতে হবে। JOIN ছাড়া এটা সম্ভব নয়।
+
+      ২. JOIN এর বেসিক কাজের ধরণ
+                      1. INNER JOIN
+                      2. LEFT (OUTER) JOIN
+                      3. RIGHT (OUTER) JOIN
+                      4. FULL (OUTER) JOIN
+                      5. CROSS JOIN
+
+
+Explain the GROUP BY clause and its role in aggregation operations ?
+
+ANS :  
+
+        GROUP BY ক্লজের কাজ
+                        * ডেটাকে যেসব কলাম দিয়ে গোষ্ঠী (group) করতে চান, সেই কলামগুলো ব্যবহার করে একাধিক রোকে একত্রিত করে একটি গ্রুপ তৈরি করে দেয়।
+
+        Rloe In Aggregate
+                        * অ্যাগ্রিগেট ফাংশন (যেমন SUM(), AVG(), COUNT(), MAX() ইত্যাদি) গ্রুপের ভেতরের ডেটা নিয়ে একক ফলাফল তৈরি করে।
+
+
+
+How can you calculate aggregate functions like COUNT(), SUM(), and AVG() in PostgreSQL?
+
+
+ANS:  
+        ১. COUNT() ফাংশন
+                        COUNT() দিয়ে আপনি মোট কতটি রো (rows) বা মান (values) আছে তা গণনা করতে পারেন।
+
+        ২. SUM() ফাংশন
+                        SUM(<numeric_column>) দিয়ে আপনি নির্দিষ্ট কলামে থাকা সংখ্যাসমষ্টি (numeric total) হিসাব করতে পারেন।
+
+                        শুধুমাত্র NULL ছাড়া বাকি সংখ্যাগুলো যোগ হয়।
+
+        ৩. AVG() ফাংশন
+                        AVG(<numeric_column>) দিয়ে নির্দিষ্ট কলামের গড় মান (average) পেতে পারেন।
+
+        
+                
+
+
+
+
+
